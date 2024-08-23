@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const text = document.getElementById('textInput').value;
         
         // Make a POST request to send the data as JSON
-        fetch('http://localhost:8080/predict', { // Flask server endpoint
+        fetch('http://52.3.252.142:8080/predict', { // Flask server endpoint
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },  // Set content type to JSON
             body: JSON.stringify({ description: text })  // Convert text to JSON
